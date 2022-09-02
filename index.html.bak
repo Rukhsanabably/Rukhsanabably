@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Electronic Store</title>
+		<link rel="stylesheet" href="webStore.css">
+	</head>
+	<body>
+	<header>
+	  <h2>Electronic Store Form</h2>
+	  <!-- <div class = "img">
+	  <img src = "elecr.png" alt = "Store Logo"> 
+	  </div> -->
+	</header>
+		
+		<div class = "frm">
+		<form action = "electri.php" method = "post">
+		<fieldset>
+		  Serial No: <input type="text" name="SerialNo"><br><br>
+		  Seller Name: <input type="text" name="SellerName><br><br>
+		  Seller Id: <input type="text" name="SellerId"><br><br>
+		  Product Name: <input type="text" name="ProductName"><br><br>
+		  Product Batch: <input type="text" name="ProductBatch"><br><br>
+		  Branch: <select>
+			<option value="Khulna">Khulna</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Dinajpur">Dinajpur</option>
+			<option value="Rajshahi">Rajshahi</option>
+			<option value="Chittagong">Chittagong</option>
+			<option value="Sylhet">Sylhet</option>
+		  </select><br><br>
+		  
+		  Customer Name: <input type="text" name="CustomerName"><br><br>
+		  <label for="lname">Customer Location:</label>
+		  <input type="text" id="lname" name="CustomerLocation" value=" "><br><br>
+		  
+		  Cell No: <select>
+			<option>+88</option>
+			<option>+91</option>
+			<option>+98</option>
+			<option>+23</option>
+		  </select>
+		  <input type="number" name="CellNo"><br><br>
+		  
+
+		  <label for="lname">Price:</label>
+		  <input type="text" id="lname" name="WholeSalePrice" value=" "><br><br>
+		  
+		  
+		  <b>Comment:  </b>
+			<textarea name="comment" rows="4" cols="40"></textarea><br><br><br>
+		  
+		  <input type="submit" value="Submit">
+		</fieldset>
+		
+		  
+		</form><br>
+		
+		</div>
+		
+		<footer>
+		  <p>Footer</p>
+		</footer>
+
+	</body>
+</html>

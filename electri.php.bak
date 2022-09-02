@@ -1,0 +1,20 @@
+<?php
+	$SerialNo = $_POST['SerialNo'];
+	$SellerName = $_POST['SellerName'];
+	$SerialId = $_POST['SerialId'];
+	$ProductName = $_POST['ProductName'];
+	$ProductBatch = $_POST['ProductBatch'];
+	$CustomerName = $_POST['CustomerName'];
+	$CustomerAddress = $_POST['CustomerAddress'];
+	$CellNo = $_POST['CellNo'];
+	$CustomerLocation = $_POST['CustomerLocation'];
+	$WholeSalePrice = $_POST['WholeSalePrice'];
+	$RetailPrice = $_POST['RetailPrice'];
+	
+
+	$db = mysqli_connect($host, $username, $password, $db_name);
+
+	$result = mysqli_query($db, 'SELECT *FROM 'data'');
+	
+	
+?>

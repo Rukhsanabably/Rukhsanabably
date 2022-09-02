@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #customers {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	}
+
+
+	#customers td, th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	}
+	#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+	#customers tr:hover {background-color: #ddd;}
+
+	#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+	}
+</style>
+<body>
+	<table id="customers">
+        <th>
+            <tr>
+                <th>Serial ID</th>
+                <th>Seller Name</th>
+                <th>Seller ID</th>
+				<th>Product Name</th>
+                <th>Product Model</th>
+                <th>Branch</th>
+                <th>Customer Name</th>
+                <th>Customer Location</th>
+                <th>Cell No</th>
+                <th>Price</th>
+            </tr>
+        </th>
+
+        <tbody>
+            <?php
+               if(!empty($row))
+               foreach($row as $rows)
+              { 
+            ?>
+            <tr>
+			 	<td><?php echo $rows['Serial ID']; ?></td>
+                <td><?php echo $rows['Seller Name']; ?></td>
+                <td><?php echo $rows['Seller ID']; ?></td>
+                <td><?php echo $rows['Product Name']; ?></td>
+                <td><?php echo $rows['Product Model']; ?></td>
+                <td><?php echo $rows['Branch']; ?></td>
+                <td><?php echo $rows['Customer Name']; ?></td>
+                <td><?php echo $rows['Customer Location']; ?></td>
+                <td><?php echo $rows['Cell No']; ?></td>
+                <td><?php echo $rows['Price']; ?></td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</body>
+</html>
